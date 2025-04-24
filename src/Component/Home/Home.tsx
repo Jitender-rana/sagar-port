@@ -16,10 +16,12 @@ import grp4 from "../../Photos/Group 483257.svg"
 import grp5 from "../../Photos/Group 483254.svg"
 import { Typed } from "react-typed"
 import { useEffect, useRef } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 function Home() {
 
     const el = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(()=>{
         const typed = new Typed(el.current, {
@@ -35,6 +37,10 @@ function Home() {
 
     }, []);
 
+    function handleGetInTouch(){
+        navigate("/contact");
+    }
+
   return (
     <>
     <div className={styled.home} style={{marginBottom: "95px"}}>
@@ -45,12 +51,12 @@ function Home() {
                 </div>
                 <div className={styled.navigator}>
                     <div className={styled.navA}>
-                        <a href="index.html">HOME</a>
-                        <a href="index2.html">ABOUT US</a>
-                        <a href="index.html">MY WORKS</a>
+                        <Link to="/">HOME</Link>
+                        <Link to="/about">ABOUT US</Link>
+                        <Link to="/work">MY WORKS</Link>
                     </div>
                     <div className={styled.navbtn}>
-                        <a href="./contact.html"><button>CONTACT</button></a>
+                        <Link to="/contact"><button>CONTACT</button></Link>
                     </div>
                 </div>
             </div>
@@ -71,7 +77,7 @@ function Home() {
         </div>
         <div className={styled.buttons}>
             <div className={styled.touch}>
-                <button>Get In Touch</button>
+                <button onClick={handleGetInTouch} >Get In Touch</button>
             </div>
             <div>
                 <button className={styled.CV}>Download CV</button>

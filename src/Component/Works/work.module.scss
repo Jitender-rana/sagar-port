@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36.17px;
+  flex-direction: column;
+}
+
+.nav {
+  /* background-color: red; */
+  width: 1280px;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigator {
+  display: flex;
+  gap: 35px;
+}
+
+.navA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+  font-size: 16px;
+  margin-right: 35px;
+}
+
+.navA a {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  font-weight: 500;
+}
+
+.navA a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #ffffffb8;
+  bottom: -5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navA a:hover::before {
+  width: 100%;
+}
+
+.navbtn button {
+  font-size: 14px;
+  padding: 10px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  height: 48px;
+  width: 138px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbtn button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.pproject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55.5px;
+}
+
+.projects{
+    margin-top: 75px;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 50.83px;
+    width: 80%;
+}
+
+.travelplanner div{
+    margin-top: 40.4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view{
+    display: flex;
+    gap: 2.8px;
+    width: 23%;
+    background-color: transparent;
+    color: #A9A9A9;
+    border: none;
+    border: 2px solid rgba(72, 78, 83, 1);
+    border-radius: 47.6px;
+    padding: 4.67px 0px 4.67px 8.5px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 13.063px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.023%; /* 20.121px */
+    letter-spacing: 0.327px; 
+    cursor: pointer;   
+    transition: 0.3s;    
+}
+
+.view:hover{
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+
+    p{
+        background-color: #fff;
+        color: #000;
+    }
+
+    img{
+        background-color: white;
+    }
+
+}
+
+.btn{
+    color: #A9A9A9;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-size: 13.063px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.023%; /* 20.121px */
+    letter-spacing: 0.327px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgba(72, 78, 83, 1);
+    border-radius: 47.6px;
+    padding: 4.67px 10.26px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+
+.aboutlast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutlast
+{ button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    padding: 18px 24px;
+    color: #FFF;
+    font-family: "Urbanist", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #FFF;
+    border-radius: 60px;
+    transition: 0.3s;
+}
+}
+
+.aboutlast button:hover{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    box-shadow: #fff 0 0 15px 0px;
+
+    p{
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+.thefront{
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;  
+  }
+  
+  .card:hover .thefront{
+    transform: rotateY(360deg);
+  }
+  
+  .theback{
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+  
