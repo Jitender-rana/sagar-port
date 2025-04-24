@@ -1,4 +1,8 @@
 import styled from "./home.module.scss"
+import chat from "../../Photos/chat.jpg"
+import second from "../../Photos/Secondbrain.png"
+import tin from "../../Photos/Tindog.png"
+import move from "../../Photos/Moveit.png"
 import logo from "../../Photos/Dharsh.svg"
 import eclipese from "../../Photos/Ellipse 78.svg"
 import travel from "../../Photos/travel.svg"
@@ -68,11 +72,11 @@ function Home() {
         </div>
         <div className={styled.title}>
             <div className={styled.titleheading}>
-                <p>Designing <span className={styled.a} ref={el} ></span><br /> 
-                    One Interaction at a <span className={styled.b}>Time.</span></p>
+                <p>Engineering <span className={styled.a} ref={el} ></span><br /> 
+                    One Stack at a <span className={styled.b}>Time.</span></p>
             </div>
             <div className={styled.titleinfo}>
-                <p>I’m Harsh Rana, a passionate UI/UX designer who thrives on crafting user-centered designs that not only look great but solve real problems. With a love for clean interfaces, intuitive navigation, and thoughtful interactions, I aim to create digital experiences that leave a lasting impression. Let’s collaborate and turn ideas into visually stunning realities!</p>
+                <p>I'm Jitender Rana, an aspiring Full Stack and DevOps engineer driven by the passion to build robust, scalable, and user-friendly applications. With a knack for clean code, seamless deployments, and optimized workflows, I strive to bridge the gap between development and operations. Let's collaborate to turn ideas into powerful, production-ready solutions!</p>
             </div>
         </div>
         <div className={styled.buttons}>
@@ -80,7 +84,7 @@ function Home() {
                 <button onClick={handleGetInTouch} >Get In Touch</button>
             </div>
             <div>
-                <button className={styled.CV}>Download CV</button>
+                <a href="https://drive.google.com/file/d/1Sw0HKLwgS-bQkBx2kZd_kpkOj5ne4QUh/view?usp=drive_link" target="_blank"><button className={styled.CV}>Download CV</button></a>
             </div>
         </div>
     </div>
@@ -98,45 +102,45 @@ function Home() {
         <div className={styled.projects}>
             <div className={styled.card}>
             <div className={styled.travelplanner}>
-                <div className={styled.thefront}><img src={travel} /></div>
-                <div className={styled.theback}><img src={travel} /></div>
+                <div className={styled.thefront}><img className={styled.projectbanner} src={chat} /></div>
+                <div className={styled.theback}><img  className={styled.projectbanner} src={chat} /></div>
                 <div>
-                    <button className={styled.btn}>Landing Page</button>
-                    <button className={styled.btn}>Ui & Ux</button>
-                    <button className={styled.view}><p>View Project </p><img src={rightArr} /></button>
+                    <a><button className={styled.btn}>Landing Page</button></a>
+                    <button className={styled.btn}>Fullstack and Devops</button>
+                    <a href="https://github.com/Jitender-rana/Chat-App" target="_blank"><button className={styled.view}><p>View Project</p><img src={rightArr} /></button></a>
                 </div>
             </div>
             </div>
             <div className={styled.card}>
             <div className={styled.travelplanner}>
-                <div className={styled.thefront}><img src={rare} /></div>
-                <div className={styled.theback}><img src={rare} /></div>
+                <div className={styled.thefront}><img className={styled.projectbanner} src={second} /></div>
+                <div className={styled.theback}><img className={styled.projectbanner} src={second} /></div>
                 <div>
-                    <button className={styled.btn}>Landing Page</button>
-                    <button className={styled.btn}>Ui & Ux</button>
-                    <button className={styled.view}><p>View Project </p><img src={rightArr} /></button>
+                    <a href="https://second-brain-frontend-gamma.vercel.app/" target="_blank"><button className={styled.btn}>Landing Page</button></a>
+                    <button className={styled.btn}>Fullstack</button>
+                    <a href="https://github.com/Jitender-rana/Second-brain-Backend" target="_blank"><button className={styled.view}><p>View Project </p><img src={rightArr} /></button></a>
                 </div>
             </div>
             </div>
             <div className={styled.card}>
             <div className={styled.travelplanner}>
-                <div className={styled.thefront}><img src={furry} /></div>
-                <div className={styled.theback}><img src={furry} /></div>
+                <div className={styled.thefront}><img className={styled.projectbanner} src={move} /></div>
+                <div className={styled.theback}><img className={styled.projectbanner} src={move} /></div>
                 <div>
-                    <button className={styled.btn}>Landing Page</button>
-                    <button className={styled.btn}>Ui & Ux</button>
-                    <button className={styled.view}><p>View Project </p><img src={rightArr} /></button>
+                    <a href="https://jitender-rana.github.io/Moveit/" target="_blank"><button className={styled.btn}>Landing Page</button></a>
+                    <button className={styled.btn}>Frontend</button>
+                    <a href="https://github.com/Jitender-rana/Moveit" target="_blank"><button className={styled.view}><p>View Project </p><img src={rightArr} /></button></a>
                 </div>
             </div>
             </div>
             <div className={styled.card}>
             <div className={styled.travelplanner}>
-                <div className={styled.thefront}><img src={link} /></div>
-                <div className={styled.theback}><img src={link} /></div>
+                <div className={styled.thefront}><img className={styled.projectbanner} src={tin} /></div>
+                <div className={styled.theback}><img className={styled.projectbanner} src={tin} /></div>
                 <div>
-                    <button className={styled.btn}>Landing Page</button>
-                    <button className={styled.btn}>Ui & Ux</button>
-                    <button className={styled.view}><p>View Project </p><img src={rightArr} /></button>
+                    <a href="https://jitender-rana.github.io/TinDog/" target="_blank"><button className={styled.btn}>Landing Page</button></a>
+                    <button className={styled.btn}>Frontend</button>
+                    <a href="https://github.com/Jitender-rana/TinDog" target="_blank"><button className={styled.view}><p>View Project </p><img src={rightArr} /></button></a>
                 </div>
             </div>
             </div>
@@ -149,7 +153,7 @@ function Home() {
 
     {/* <!-- Testimonal --> */}
 
-    <div className={styled.ptestimonal}>
+    {/* <div className={styled.ptestimonal}>
         <div className={styled.testimonal}>
             <div className={styled.testhead}>
                 <div>
@@ -165,18 +169,18 @@ function Home() {
                 <p className={styled.bold}>ARSHIT</p>
             </div>
         </div>
-    </div>
+    </div> */}
 
     {/* <!-- Footer --> */}
 
-    <div id="footer">
+    <div className={styled.footer}>
         <div className={styled.footerfirst}>
             <div>
                 <h1>Let's <br /> Work Together - </h1>
             </div>
             <div className={styled.ftrbtn}>
                 <div className={styled.fbtn}>
-                    <button><img src={gmail} />harsh81@gmail.com</button>
+                <a href='mailto:jrana0527@gmail.com'><button style={{cursor: "pointer"}}><img src={gmail} />jrana0527@gmail.com</button></a>
                 </div>
                 <div className={styled.fbtn}>
                     <button style={{backgroundColor: "#1D6400"}}><img src={upwork} />Hire me on Upwork</button>
@@ -187,11 +191,11 @@ function Home() {
             <p>© 2024 All rights reserved.
             </p>
             <div className={styled.img}>
-                <img src={grp1} />
-                <img src={grp2} />
+                <a href="https://www.linkedin.com/in/jitender-rana-532347251/" target="_blank"><img className={styled.img} src={grp1} /></a>
+                {/* <img src={grp2} />
                 <img src={grp3} />
-                <img src={grp4} />
-                <img src={grp5} />
+                <img src={grp4} /> */}
+                <a href="https://x.com/jitenderRa6995" target="_blank"><img className={styled.img} src={grp5} /></a>
             </div>
         </div>
     </div>

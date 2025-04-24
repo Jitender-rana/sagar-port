@@ -296,7 +296,9 @@ body{
     line-height: 154.023%; /* 20.121px */
     letter-spacing: 0.327px; 
     cursor: pointer;   
-    transition: 0.3s;    
+    transition: 0.3s;
+    width: 100px;
+       
 }
 
 .view:hover{
@@ -332,6 +334,7 @@ body{
     padding: 4.67px 10.26px;
     cursor: pointer;
     transition: 0.3s;
+    height: 50px;
 }
 
 .btn:hover{
@@ -428,8 +431,10 @@ body{
     line-height: normal;
 }
 
-#footer{
-    /* background-color: yellow; */
+.footer{
+    // background-color: yellow; 
+    margin-top: 150px;
+    
 }
 
 .footerfirst{
@@ -485,7 +490,8 @@ body{
 
 .footerlast{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 800px;
     margin: 105px 112px 39.14px 112px;
 }
 
@@ -506,7 +512,10 @@ text-transform: lowercase;
 
 .img{
     display: flex;
+    justify-content: flex-start;
     gap: 12px;
+    height: 70px;
+
 }
 
 
@@ -515,7 +524,8 @@ text-transform: lowercase;
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  backface-visibility: hidden;  
+  backface-visibility: hidden;
+
 }
 
 .card:hover .thefront{
@@ -527,5 +537,11 @@ text-transform: lowercase;
   top: 0;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+
+}
+.projectbanner{
+  height: 350px;
+  width: 450px;
+  border-radius: 5px;
 }
 

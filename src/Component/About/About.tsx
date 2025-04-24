@@ -6,12 +6,16 @@ import grp2 from "../../Photos/Group 483252.svg"
 import grp3 from "../../Photos/Group 483258.png"
 import grp4 from "../../Photos/Group 483257.svg"
 import grp5 from "../../Photos/Group 483254.svg"
+import { useNavigate } from "react-router-dom"
 
 function About() {
+    const navigate=useNavigate();
   return (
     <>
     <div className={styled.nav}>
-        <div className={styled.logo}>
+        <div style={{cursor:"pointer"}} onClick={()=>{
+            navigate("/");
+        }}className={styled.logo}>
             <img src={logo} />
         </div>
     </div>
@@ -22,14 +26,14 @@ function About() {
                 <img src={reactangle} height="130px" width="130px" />
             </div>
             <div className={styled.head}>
-                <pre><p>Hi, I am Harsh! I am a designer <br /> 
+                <pre><p>Hi, I am Jitender! I am a developer <br /> 
 based on India. </p></pre>
             </div>
             <div className={styled.info}>
-                <p>Age - 21</p>
+                <p>Age - 22</p>
                 <p>Country – India</p>
-                <p>whatsapp - +910000008075</p>
-                <p>Email - harsh81@gmail.com</p>
+                <p>whatsapp - +918628840707</p>
+                <p>Email - jrana0527@gmail.com</p>
             </div>
             <div className={styled.connect}>
                 <img src={grp1} />
@@ -41,10 +45,10 @@ based on India. </p></pre>
         </div>
         <div className={styled.right}>
             <div className={styled.links}>
-                <a href="index.html"><h1>Home</h1></a>
-                <a href="index2.html"><h1>About Us</h1></a>
-                <a href="index.html"><h1>My Works</h1></a>
-                <a href="contact.html"><h1>Contact</h1></a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/")}}><h1>Home</h1></a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/about")}}><h1>About Us</h1></a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/work")}}><h1>My Works</h1></a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/contact")}}><h1>Contact</h1></a>
             </div>
         </div>
     </div>

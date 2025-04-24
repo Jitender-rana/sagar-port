@@ -9,8 +9,10 @@ import img2 from "../../Photos/Group 483252.svg"
 import img3 from "../../Photos/Group 483258.png";
 import img4 from "../../Photos/Group 483257.svg"
 import img5 from "../../Photos/Group 483254.svg"
+import { useNavigate } from 'react-router-dom'
 
 function Contact() {
+    const navigate=useNavigate();
   return (
     <>
     <div className={styles.header}>
@@ -21,12 +23,13 @@ function Contact() {
             </div>
             <div className={styles.navigator}>
                 <div className={styles["nav-a"]}>
-                    <a href="index.html">HOME</a>
-                    <a href="index2.html">ABOUT US</a>
-                    <a href="index.html">MY WORKS</a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/")}}><h1>Home</h1></a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/about")}}><h1>About Us</h1></a>
+                <a style={{cursor:"pointer"}} onClick={()=>{navigate("/work")}}><h1>My Works</h1></a>
+                
                 </div>
                 <div className={styles["nav-btn"]}>
-                    <a href="./contact.html"><button>CONTACT</button></a>
+                    <a><button>CONTACT</button></a>
                 </div>
             </div>
         </div>
@@ -79,7 +82,7 @@ function Contact() {
             </div>
             <div className={styles["ftr-btn"]}>
                 <div className={styles.fbtn}>
-                    <button><img src={gmail} />harsh81@gmail.com</button>
+                    <a href='mailto:jrana0527@gmail.com'><button style={{cursor: 'pointer'}}><img src={gmail} />jrana0527@gmail.com</button></a>
                 </div>
                 <div className={styles.fbtn}>
                     <button style={{backgroundColor: "#1D6400"}}><img src={upwork} />Hire me on Upwork</button>
