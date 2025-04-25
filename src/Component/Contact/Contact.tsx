@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./contact.module.scss"
 import logo from "../../Photos/Dharsh.svg"
 import freelance from "../../Photos/freelancer.svg"

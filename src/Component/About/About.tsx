@@ -13,18 +13,18 @@ function About() {
     const navigate=useNavigate();
     
     // Animation variants
-    const fadeInLeft = {
-        hidden: { x: -60, opacity: 0 },
-        visible: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                type: "spring",
-                damping: 15,
-                stiffness: 80
-            }
-        }
-    };
+    // const fadeInLeft = {
+    //     hidden: { x: -60, opacity: 0 },
+    //     visible: {
+    //         x: 0,
+    //         opacity: 1,
+    //         transition: {
+    //             type: "spring",
+    //             damping: 15,
+    //             stiffness: 80
+    //         }
+    //     }
+    // };
     
     const fadeInRight = {
         hidden: { x: 60, opacity: 0 },

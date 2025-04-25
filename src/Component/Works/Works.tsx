@@ -1,15 +1,7 @@
 import styled from "./work.module.scss"
-import second from "../../Photos/Secondbrain.png"
-import chat from "../../Photos/chat.jpg"
-import tin from "../../Photos/Tindog.png"
-import move from "../../Photos/Moveit.png"
 import logo from "../../Photos/Dharsh.svg"
 import { Link, useNavigate } from 'react-router-dom'
-import travel from "../../Photos/travel.svg"
 import rightArr from "../../Photos/Arrow_Up_Right_MD.svg"
-import rare from "../../Photos/rare.svg"
-import furry from "../../Photos/furry.svg"
-import link from "../../Photos/link.svg"
 import { motion } from "framer-motion"
 
 function Works() {
