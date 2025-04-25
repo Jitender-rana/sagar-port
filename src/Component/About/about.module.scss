@@ -58,6 +58,119 @@ line-height: 154.023%; /* 24.644px */
 letter-spacing: 0.4px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.skills h3 {
+    color: #DEDEDE;
+    font-family: Urbanist;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.skillCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skillCategory h4 {
+    color: #DEDEDE;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.skillItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skillItems span {
+    background-color: rgba(169, 169, 169, 0.1);
+    border-radius: 20px;
+    color: #A9A9A9;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.skillItems span:hover {
+    background-color: rgba(169, 169, 169, 0.2);
+    color: #DEDEDE;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.certifications h3 {
+    color: #DEDEDE;
+    font-family: Urbanist;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.certCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.certCard {
+    background-color: rgba(169, 169, 169, 0.05);
+    border: 1px solid rgba(169, 169, 169, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.certCard:hover {
+    background-color: rgba(169, 169, 169, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.certCard h4 {
+    color: #DEDEDE;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.certCompany {
+    color: #A9A9A9;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.certDesc {
+    color: #A9A9A9;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
 .connect{
     display: flex;
     gap: 10px;

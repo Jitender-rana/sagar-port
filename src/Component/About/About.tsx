@@ -35,6 +35,50 @@ based on India. </p></pre>
                 <p>whatsapp - +918628840707</p>
                 <p>Email - jrana0527@gmail.com</p>
             </div>
+            <div className={styled.skills}>
+                <h3>Skills</h3>
+                <div className={styled.skillCategory}>
+                    <h4>Languages</h4>
+                    <div className={styled.skillItems}>
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div className={styled.skillCategory}>
+                    <h4>Tools</h4>
+                    <div className={styled.skillItems}>
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+                <div className={styled.skillCategory}>
+                    <h4>Frameworks</h4>
+                    <div className={styled.skillItems}>
+                        <span>React</span>
+                        <span>Next.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div className={styled.certifications}>
+                <h3>Certifications</h3>
+                <div className={styled.certCards}>
+                    <a href="https://drive.google.com/file/d/1GuwIretEhwzWdr7XCf2R3Ebgwt2PEY5w/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styled.certCard}>
+                        <h4>Generative AI for Everyone</h4>
+                        <p className={styled.certCompany}>DeepLearning.AI</p>
+                        <p className={styled.certDesc}>Comprehensive training in generative AI concepts, applications, and implementation strategies for various domains.</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1KANG98FbQWWKLJjE_QEeVrIYxwiIHO6E/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className={styled.certCard}>
+                        <h4>Advanced Distributed Systems</h4>
+                        <p className={styled.certCompany}>NPTEL</p>
+                        <p className={styled.certDesc}>In-depth study of distributed computing architectures, algorithms, and system design principles.</p>
+                    </a>
+                </div>
+            </div>
+            
             <div className={styled.connect}>
                 <img src={grp1} />
                 <img src={grp2} />
